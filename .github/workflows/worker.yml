@@ -1,13 +1,17 @@
+
 name: Jarvis AI Worker
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * *"
+    - cron: '0 9 * * *'
+
 jobs:
   test-worker:
     runs-on: ubuntu-latest
     steps:
       - name: Start Jarvis
         run: echo "Jarvis cloud worker is running!"
+
       - name: Show next task
         run: echo "Next goal: find animation tools, create videos, and prepare YouTube uploads."
