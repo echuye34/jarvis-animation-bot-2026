@@ -3,8 +3,6 @@ name: Jarvis AI Worker
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 9 * * *'
 
 jobs:
   test-worker:
@@ -14,4 +12,4 @@ jobs:
         run: echo "Jarvis cloud worker is running!"
 
       - name: Show next task
-        run: echo "Next goal: find animation tools, create videos, and prepare YouTube uploads."
+        run: 'echo "Next goal: find animation tools and prepare YouTube uploads."'
