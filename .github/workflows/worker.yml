@@ -5,11 +5,7 @@ name: Jarvis AI Worker
   workflow_dispatch:
 
 jobs:
-  test-worker:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Start Jarvis
-        run: echo "Jarvis cloud worker is running!"
-
-      - name: Show next task
-        run: echo "Jarvis test completed."
+      - run: echo "Jarvis works"
